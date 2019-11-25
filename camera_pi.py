@@ -7,6 +7,7 @@ class Camera(BaseCamera):
     @staticmethod
     def frames():
         with picamera.PiCamera() as camera:
+            # Camera on R2D2 rotated
             camera.rotation = 270
             # let camera warm up
             time.sleep(2)
